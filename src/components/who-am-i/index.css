@@ -1,0 +1,100 @@
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.wrapper .bg {
+    background: #348cb2 url("../../assets/images/background/bg_1.jpg") top left;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -10;
+}
+@media (max-width: 992px) {
+    .wrapper .bg {
+        background-size: auto 100%;
+    }
+}
+.wrapper .overlay {
+    background: #3e64ff;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -9;
+    opacity: .3;
+}
+.wrapper .main {
+    margin: auto 0;
+}
+.wrapper .main h1 {
+    font-size: 3.5em;
+    font-weight: 900;
+    letter-spacing: -0.035em;
+    line-height: 1em;
+    color: #ffffff;
+}
+.wrapper .main h1 span {
+    color: #9FF569;
+}
+.wrapper .main p {
+    font-size: 1.25em;
+    margin: 0.75em 0 0.25em 0;
+    opacity: 0.75;
+    color: #ffffff;
+}
+.wrapper .main nav {
+    margin: 1.5em 0 0 0;
+}
+.wrapper .main nav ul {
+    margin: 0;
+    padding: 0;
+}
+.wrapper .main nav li {
+    display: inline-block;
+    height: 5.35em;
+    line-height: 5.885em;
+    width: 5.35em;
+}
+.wrapper .main nav a {
+    border: 0;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+.wrapper .main nav a:before {
+    border-radius: 100%;
+    border: solid 1px #fff;
+    display: block;
+    font-size: 1.75em;
+    height: 2.5em;
+    line-height: 2.5em;
+    position: relative;
+    text-align: center;
+    top: 0;
+    width: 2.5em;
+}
+.wrapper .main nav a:hover {
+    font-size: 1.0em;
+}
+.wrapper .main nav a:hover:before {
+    background-color: rgba(255, 255, 255, 0.175);
+    color: #fff;
+}
+.wrapper .main nav a:active {
+    font-size: 0.95em;
+    background: none;
+}
+.wrapper .main nav a:active:before {
+    background-color: rgba(255, 255, 255, 0.35);
+    color: #fff;
+}
+.wrapper .main nav a span {
+    display: none;
+}

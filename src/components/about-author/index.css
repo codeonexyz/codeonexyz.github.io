@@ -1,0 +1,9 @@
+.about-author {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+.about-author .desc h3 {
+    font-size: 24px;
+}

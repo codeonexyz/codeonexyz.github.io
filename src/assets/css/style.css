@@ -1,0 +1,21 @@
+@import "./default.css";
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 56px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #f8f8f8 url("../images/patterns/pattern.jpg");
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    font-weight: 400;
+    text-align: left;
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.img, .blog-img, .user-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

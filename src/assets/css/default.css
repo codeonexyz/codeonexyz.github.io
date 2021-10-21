@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@font-face { font-family: "Roboto"; src: url("../fonts/Roboto/Roboto-Regular.eot"), url("../fonts/Roboto/Roboto-Regular.ttf"), url("../fonts/Roboto/Roboto-Regular.woff"), url("../fonts/Roboto/Roboto-Regular.woff2"); }
+@font-face { font-family: "Roboto-Light"; src: url("../fonts/Roboto/Roboto-Light.eot"), url("../fonts/Roboto/Roboto-Light.ttf"), url("../fonts/Roboto/Roboto-Light.woff"), url("../fonts/Roboto/Roboto-Light.woff2"); }
+@font-face { font-family: "Roboto-Bold"; src: url("../fonts/Roboto/Roboto-Bold.eot"), url("../fonts/Roboto/Roboto-Bold.ttf"), url("../fonts/Roboto/Roboto-Bold.woff"), url("../fonts/Roboto/Roboto-Bold.woff2"); }
+@font-face { font-family: "Roboto-Medium"; src: url("../fonts/Roboto/Roboto-Medium.eot"), url("../fonts/Roboto/Roboto-Medium.ttf"), url("../fonts/Roboto/Roboto-Medium.woff"), url("../fonts/Roboto/Roboto-Medium.woff2"); }
+
+@font-face { font-family: "Montserrat-Black"; src: url("../fonts/Montserrat/Montserrat-Black.ttf"); }
+@font-face { font-family: "Montserrat-BlackItalic"; src: url("../fonts/Montserrat/Montserrat-BlackItalic.ttf"); }
+@font-face { font-family: "Montserrat-Bold"; src: url("../fonts/Montserrat/Montserrat-Bold.ttf"); }
+@font-face { font-family: "Montserrat-BoldItalic"; src: url("../fonts/Montserrat/Montserrat-BoldItalic.ttf"); }
+@font-face { font-family: "Montserrat-ExtraBold"; src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf"); }
+@font-face { font-family: "Montserrat-ExtraBoldItalic"; src: url("../fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf"); }
+@font-face { font-family: "Montserrat-ExtraLight"; src: url("../fonts/Montserrat/Montserrat-ExtraLight.ttf"); }
+@font-face { font-family: "Montserrat-ExtraLightItalic"; src: url("../fonts/Montserrat/Montserrat-ExtraLightItalic.ttf"); }
+@font-face { font-family: "Montserrat-Italic"; src: url("../fonts/Montserrat/Montserrat-Italic.ttf"); }
+@font-face { font-family: "Montserrat-Light"; src: url("../fonts/Montserrat/Montserrat-Light.ttf"); }
+@font-face { font-family: "Montserrat-LightItalic"; src: url("../fonts/Montserrat/Montserrat-LightItalic.ttf"); }
+@font-face { font-family: "Montserrat-Medium"; src: url("../fonts/Montserrat/Montserrat-Medium.ttf"); }
+@font-face { font-family: "Montserrat-MediumItalic"; src: url("../fonts/Montserrat/Montserrat-MediumItalic.ttf"); }
+@font-face { font-family: "Montserrat"; src: url("../fonts/Montserrat/Montserrat-Regular.ttf"); }
+@font-face { font-family: "Montserrat-SemiBold"; src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf"); }
+@font-face { font-family: "Montserrat-SemiBoldItalic"; src: url("../fonts/Montserrat/Montserrat-SemiBoldItalic.ttf"); }
+@font-face { font-family: "Montserrat-Thin"; src: url("../fonts/Montserrat/Montserrat-Thin.ttf"); }
+@font-face { font-family: "Montserrat-ThinItalic"; src: url("../fonts/Montserrat/Montserrat-ThinItalic.ttf"); }
+
+@import url(../icons/font-awesome/css/font-awesome.min.css);
+@import url(../icons/simple-line-icons/css/simple-line-icons.css);
+@import url(../icons/weather-icons/css/weather-icons.min.css);
+@import url(../icons/cryptocoins/css/cryptocoins.css);
+@import url(../icons/cryptocoins/css/cryptocoins-colors.css);
+@import url(../icons/linea-icons/linea.css);
+@import url(../icons/ionicons/css/ionicons.css);
+@import url(../icons/themify-icons/themify-icons.css);
+@import url(../icons/flag-icon-css/flag-icon.min.css);
+@import url(../icons/material-design-iconic-font/materialdesignicons.min.css);
+@import url(../icons/pe-icon-set-weather/css/pe-icon-set-weather.min.css);
+@import url(../icons/flaticon/css/flaticon.css);
+@import url(../icons/icomoon/css/icomoon.css);
+@import url(../icons/open-iconic/css/open-iconic.min.css);
+
+/* fonts  */
+.ff-roboto { font-family: 'Roboto' !important; }
+.ff-roboto-light { font-family: 'Roboto-Light' !important; }
+.ff-roboto-medium { font-family: 'Roboto-Medium' !important; }
+.ff-roboto-bold { font-family: 'Roboto-Bold' !important; }
+
+.ff-montserrat { font-family: 'Montserrat' !important; }
+.ff-montserrat-black { font-family: 'Montserrat-Black' !important; }
+.ff-montserrat-black-italic { font-family: 'Montserrat-BlackItalic' !important; }
+.ff-montserrat-bold { font-family: 'Montserrat-Bold' !important; }
+.ff-montserrat-bold-italic { font-family: 'Montserrat-BoldItalic' !important; }
+.ff-montserrat-extra-bold { font-family: 'Montserrat-ExtraBold' !important; }
+.ff-montserrat-extra-bold-italic { font-family: 'Montserrat-ExtraBoldItalic' !important; }
+.ff-montserrat-semi-bold { font-family: 'Montserrat-SemiBold' !important; }
+.ff-montserrat-semi-bold-italic { font-family: 'Montserrat-SemiBoldItalic' !important; }
+.ff-montserrat-medium { font-family: 'Montserrat-Medium' !important; }
+.ff-montserrat-medium-italic { font-family: 'Montserrat-MediumItalic' !important; }
+.ff-montserrat-light { font-family: 'Montserrat-Light' !important; }
+.ff-montserrat-light-italic { font-family: 'Montserrat-LightItalic' !important; }
+.ff-montserrat-extra-light { font-family: 'Montserrat-ExtraLight' !important; }
+.ff-montserrat-extra-light-italic { font-family: 'Montserrat-ExtraLightItalic' !important; }
+.ff-montserrat-thin { font-family: 'Montserrat-Thin' !important; }
+.ff-montserrat-thin-italic { font-family: 'Montserrat-ThinItalic' !important; }
+.ff-montserrat-italic { font-family: 'Montserrat-Italic' !important; }
+
+.fs-1 { font-size: .7rem !important; }
+.fs-2 { font-size: .8rem !important; }
+.fs-3 { font-size: .9rem !important; }
+.fs-4 { font-size: 1rem !important; }
+.fs-5 { font-size: 1.2rem !important; }
+.fs-6 { font-size: 1.4rem !important; }
+.fs-7 { font-size: 1.8rem !important; }
+.fs-8 { font-size: 2rem !important; }
+.fs-9 { font-size: 2.4rem !important; }
+.fs-10 { font-size: 2.8rem !important; }
+.fs-11 { font-size: 3.2rem !important; }
+.fs-12 { font-size: 3.8rem !important; }
+.fs-13 { font-size: 4.4rem !important; }
+.fs-14 { font-size: 5.2rem !important; }
+.fs-15 { font-size: 6.8rem !important; }
+

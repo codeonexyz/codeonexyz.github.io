@@ -1,0 +1,29 @@
+.card.service {
+    height: 100%;
+}
+.card.service h5.card-title {
+    position: relative;
+    margin-bottom: 30px;
+}
+.card.service h5.card-title:after {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 30px;
+    height: 1px;
+    background: #3364FF;
+    margin: 0 auto;
+}
+.card.service .icon {
+    display: block;
+    margin-bottom: 30px;
+}
+.card.service .icon i {
+    line-height: 1.0;
+    color: #3e64ff;
+}
+.card.service .card-text {
+    color: #777;
+}

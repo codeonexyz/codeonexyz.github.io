@@ -1,0 +1,25 @@
+.hire-me {
+    background-image: url(../../assets/images/background/bg_1.jpg);
+    /*background: #3e64ff;*/
+    z-index: 0;
+    position: relative;
+    padding: 120px;
+    margin: 0;
+    color: #fff;
+}
+.hire-me h2 > span {
+	color: #9FF569;
+}
+.hire-me .overlay {
+	position: absolute;
+	content: '';
+	background: #3e64ff;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: .7;
+}
+.hire-me a.btn {
+	border-radius: 100px;
+}
