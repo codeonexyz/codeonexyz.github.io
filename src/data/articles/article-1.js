@@ -1,33 +1,79 @@
 import React from 'react';
 import blogImg from '../../assets/images/blogs';
 import { admin } from '../authors';
+import { Link } from 'react-router-dom'; 
 
 const article1 = {
-	title: 'Why Lead Generation is Key for Business Growth',
-	publishedDate: 'Sept. 12, 2019',
-	description: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
+	title: 'What is Typescript?',
+	publishedDate: 'Oct. 24, 2021',
+	description: 'The Complete Guide to Typescript and Why You Should Toss Your Old JavaScript Knowledge.',
 	images: { 
-		blogEntry: blogImg['image_1jpg'] 
+		blogEntry: blogImg['img1jpg']
 	},
 	author: admin,
-	key: 'why-lead-generation-is-key-for-business-growth-1',
+	key: 'what-is-typescript',
 };
 
 article1.body =	(
-	<div>
-		<h3>{article1.title}</h3>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.
-		</p>
-		<img src={article1.images.blogEntry} alt={article1.title} className='img-fluid'/>
-		<p>Molestiae cupiditate inventore animi, maxime sapiente optio, illo est nemo veritatis repellat sunt doloribus nesciunt! Minima laborum magni reiciendis qui voluptate quisquam voluptatem soluta illo eum ullam incidunt rem assumenda eveniet eaque sequi deleniti tenetur dolore amet fugit perspiciatis ipsa, odit. Nesciunt dolor minima esse vero ut ea, repudiandae suscipit!</p>
-		<h3>#2. Creative WordPress Themes</h3>
-		<p>Temporibus ad error suscipit exercitationem hic molestiae totam obcaecati rerum, eius aut, in. Exercitationem atque quidem tempora maiores ex architecto voluptatum aut officia doloremque. Error dolore voluptas, omnis molestias odio dignissimos culpa ex earum nisi consequatur quos odit quasi repellat qui officiis reiciendis incidunt hic non? Debitis commodi aut, adipisci.</p>
-		<p>Quisquam esse aliquam fuga distinctio, quidem delectus veritatis reiciendis. Nihil explicabo quod, est eos ipsum. Unde aut non tenetur tempore, nisi culpa voluptate maiores officiis quis vel ab consectetur suscipit veritatis nulla quos quia aspernatur perferendis, libero sint. Error, velit, porro. Deserunt minus, quibusdam iste enim veniam, modi rem maiores.</p>
-		<p>Odit voluptatibus, eveniet vel nihil cum ullam dolores laborum, quo velit commodi rerum eum quidem pariatur! Quia fuga iste tenetur, ipsa vel nisi in dolorum consequatur, veritatis porro explicabo soluta commodi libero voluptatem similique id quidem? Blanditiis voluptates aperiam non magni. Reprehenderit nobis odit inventore, quia laboriosam harum excepturi ea.</p>
-		<p>Adipisci vero culpa, eius nobis soluta. Dolore, maxime ullam ipsam quidem, dolor distinctio similique asperiores voluptas enim, exercitationem ratione aut adipisci modi quod quibusdam iusto, voluptates beatae iure nemo itaque laborum. Consequuntur et pariatur totam fuga eligendi vero dolorum provident. Voluptatibus, veritatis. Beatae numquam nam ab voluptatibus culpa, tenetur recusandae!</p>
-		<p>Voluptas dolores dignissimos dolorum temporibus, autem aliquam ducimus at officia adipisci quasi nemo a perspiciatis provident magni laboriosam repudiandae iure iusto commodi debitis est blanditiis alias laborum sint dolore. Dolores, iure, reprehenderit. Error provident, pariatur cupiditate soluta doloremque aut ratione. Harum voluptates mollitia illo minus praesentium, rerum ipsa debitis, inventore?</p>
-	</div>
+	<div className="text-dark">
+		<h2 className="mb-0">{article1.title}</h2>
+		<span className="text-muted ff-montserrat-italic">{article1.publishedDate}</span>{' | '}
+		<Link to="/me" className="text-muted ff-montserrat-medium">{article1.author.name}</Link>
+			<img className="img img-fluid my-4" src={blogImg["img1jpg"]} alt={article1.title} />
+			<p><strong>TypeScript</strong> is a programming language developed and maintained by <strong>Microsoft</strong>. It is a strict syntactical superset of <strong>JavaScript</strong> and adds optional static typing to the language. TypeScript is designed for the development of large applications and transcompiles to JavaScript. As TypeScript is a superset of JavaScript, existing JavaScript programs are also valid TypeScript programs.</p>
+
+			<p>TypeScript may be used to develop JavaScript applications for both client-side and server-side execution (as with Node.js or Deno). There are multiple options available for transcompilation. Either the default TypeScript Checker can be used, or the Babel compiler can be invoked to convert TypeScript to JavaScript.</p>
+
+
+			<p>TypeScript supports definition files that can contain type information of existing JavaScript libraries, much like C++ header files can describe the structure of existing object files. This enables other programs to use the values defined in the files as if they were statically typed TypeScript entities. There are third-party header files for popular libraries such as jQuery, MongoDB, and D3.js. TypeScript headers for the Node.js basic modules are also available, allowing development of Node.js programs within TypeScript.</p>
+
+			<p>The TypeScript compiler is itself written in TypeScript and compiled to JavaScript. It is licensed under the <i>Apache License 2.0</i>. TypeScript is included as a first-class programming language in Microsoft Visual Studio 2013 Update 2 and later, alongside C# and other Microsoft languages. An official extension allows Visual Studio 2012 to support TypeScript as well. <i>Anders Hejlsberg</i>, lead architect of C# and creator of Delphi and Turbo Pascal, has worked on the development of TypeScript.</p>
+
+			<p>TypeScript was first made public in October 2012 (at version 0.8), after two years of internal development at Microsoft. Soon after the announcement, Miguel de Icaza praised the language itself, but criticized the lack of mature IDE support apart from Microsoft Visual Studio, which was not available on Linux and OS X at that time. As of April 2021 there is support in other IDEs and text editors, including Emacs, Vim, Webstorm, Atom and Microsoft's own Visual Studio Code.</p>
+
+			<p>TypeScript originated from the shortcomings of JavaScript for the development of large-scale applications both at Microsoft and among their external customers. Challenges with dealing with complex JavaScript code led to demand for custom tooling to ease developing of components in the language.</p>
+
+			<p>TypeScript developers sought a solution that would not break compatibility with the standard and its cross-platform support. Knowing that the current ECMAScript standard proposal promised future support for class-based programming, TypeScript was based on that proposal. That led to a JavaScript compiler with a set of syntactical language extensions, a superset based on the proposal, that transforms the extensions into regular JavaScript. In this sense TypeScript was a preview of what to expect of ECMAScript 2015. A unique aspect not in the proposal, but added to TypeScript, is optional static typing that enables static language analysis, which facilitates tooling and IDE support.</p>
+
+			<h4>Why Should We Use TypeScript?</h4>
+
+			<ul>
+				<li>TypeScript simplifies JavaScript code, making it easier to read and debug.</li>
+				<li>TypeScript is open source.</li>
+				<li>TypeScript provides highly productive development tools for JavaScript IDEs and practices, like static checking.</li>
+				<li>TypeScript makes code easier to read and understand.</li>
+				<li>With TypeScript, we can make a huge improvement over plain JavaScript.</li>
+				<li>TypeScript gives us all the benefits of ES6 (ECMAScript 6), plus more productivity.</li>
+				<li>TypeScript can help us to avoid painful bugs that developers commonly run into when writing JavaScript by type checking the code.</li>
+				<li>Powerful type system, including generics.</li>
+				<li>TypeScript is nothing but JavaScript with some additional features.</li>
+				<li>Structural, rather than nominal.</li>
+				<li>TypeScript code can be compiled as per ES5 and ES6 standards to support the latest browser.</li>
+				<li>Aligned with ECMAScript for compatibility.</li>
+				<li>Starts and ends with JavaScript.</li>
+				<li>Supports static typing.</li>
+				<li>TypeScript will save developers time.</li>
+				<li>TypeScript is a superset of ES3, ES5, and ES6.</li>
+			</ul>
+
+			<h4>What are the best IDEs for TypeScript development?</h4>
+
+			<ul>
+				<li>Visual Studio Code <span className="text-muted">(Windows, macOS, Linux)</span></li>
+				<li>WebStorm <span className="text-muted">(Windows, macOS, Linux)</span></li>
+				<li>NetBeans <span className="text-muted">(Windows, macOS, Linux)</span></li>
+				<li>Vim <span className="text-muted">(Windows, macOS, Linux)</span></li>
+				<li>Atom <span className="text-muted">(Windows, macOS, Linux)</span></li>
+				<li>PhpStorm</li>
+				<li>Notepad++ <span className="text-muted">(Windows)</span></li>
+				<li>Eclipse <span className="text-muted">(Cross Platform)</span></li>
+				<li>Intellij IDEA</li>
+				<li>CodeLobster IDE</li>
+				<li>Anglular IDE</li>
+				<li>Visual Studio 2015 Community Edition</li>
+				<li>Emacs <span className="text-muted">(Windows, Unix-like)</span></li>
+			</ul>
+		</div>
 );
 
 export default article1;

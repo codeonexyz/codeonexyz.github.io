@@ -37,14 +37,13 @@ const Article = (props) => {
 						<Row className='mb-4'>
 							<Col md='8' className='p-4 bg-light'>
 								{ article.body }
-								<AboutAuthor author={article.author} />
+								<div style={{marginTop: "50px"}}>	
+									<AboutAuthor author={article.author} />
+								</div>
 							</Col>
 							<Col md='4'>
 								<Sidebar>
-									<MiniBlogEntry article={article} />
-									<MiniBlogEntry article={article} />
-									<MiniBlogEntry article={article} />
-									<MiniBlogEntry article={article} />
+									{ _.map(articles, art => <MiniBlogEntry article={art} /> ) }
 								</Sidebar>
 							</Col>
 						</Row>
