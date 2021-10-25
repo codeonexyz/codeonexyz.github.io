@@ -7,13 +7,11 @@ import {
 } from "react-router-dom";
 
 const ViewMain = React.lazy(() => import("./views"));
-const ViewMe = React.lazy(() => import("./views/me"));
 const ViewArticle = React.lazy(() => import('./views/article'));
 const ViewBlog = React.lazy(() => import('./views/blog'));
 const ViewSkills = React.lazy(() => import('./views/skills'));
 const ViewServices = React.lazy(() => import('./views/services'));
 const ViewProjects = React.lazy(() => import('./views/projects'));
-const ViewContactme = React.lazy(() => import('./views/contactme'));
 
 const App = props => {
 
@@ -46,16 +44,6 @@ const App = props => {
               path="/projects"
               exact
               render={props => (<ViewProjects {...props} />)}
-            />
-            <Route
-              path="/contactme"
-              exact
-              render={props => (<ViewContactme {...props} />)}
-            />
-            <Route
-              path="/me"
-              exact
-              render={props => (<ViewMe {...props} />)}
             />
             <Route
               path="/"

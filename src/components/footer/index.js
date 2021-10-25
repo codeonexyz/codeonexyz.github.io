@@ -26,12 +26,10 @@ const Footer = (props) => {
 							<h2 className="heading-2">Links</h2>
               <ul className="list-unstyled">
                 <li><Link to="/"><span className="icon-long-arrow-right mr-2"></span>Home</Link></li>
-                <li><Link to="/portfolio"><span className="icon-long-arrow-right mr-2"></span>About</Link></li>
                 <li><Link to="/skills"><span className="icon-long-arrow-right mr-2"></span>Skills</Link></li>
                 <li><Link to="/services"><span className="icon-long-arrow-right mr-2"></span>Services</Link></li>
                 <li><Link to="/projects"><span className="icon-long-arrow-right mr-2"></span>Projects</Link></li>
                 <li><Link to="/blog"><span className="icon-long-arrow-right mr-2"></span>Blog</Link></li>
-                <li><Link to="/contactme"><span className="icon-long-arrow-right mr-2"></span>Contact</Link></li>
               </ul>
 						</div>
 					</Col>
@@ -59,7 +57,7 @@ const Footer = (props) => {
 					</Col>
 				</Row>
 				<Row>
-					<Col md='12' className='text-center mt-5'>
+					<Col md='12' className='text-center mt-2'>
 						<p>Copyright &copy; { (new Date().getFullYear()) } All rights reserved | codeone.xyz</p>
 					</Col>
 				</Row>

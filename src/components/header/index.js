@@ -29,9 +29,6 @@ const Header = (props) => {
               <Link to="/" className="nav-link ff-roboto-bold">Home</Link>
             </NavItem>
             <NavItem>
-              <Link to="/me" className="nav-link ff-roboto-bold">About</Link>
-            </NavItem>
-            <NavItem>
               <Link to="/skills" className="nav-link ff-roboto-bold">Skills</Link>
             </NavItem>
             <NavItem>
@@ -42,9 +39,6 @@ const Header = (props) => {
             </NavItem>
             <NavItem>
               <Link to="/blog" className="nav-link ff-roboto-bold">Blog</Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/contactme" className="nav-link ff-roboto-bold">Contact me</Link>
             </NavItem>
             {/*<UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>

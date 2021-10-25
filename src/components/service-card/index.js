@@ -11,7 +11,7 @@ const ServiceCard = (props) => {
 	const { title, description, icon } = props;
 
 	return (
-		<Card className="p-4 service bg-white rounded-lg shadow text-dark" style={{borderWidth: '0'}}>
+		<Card className="p-4 service bg-white rounded-lg shadow text-dark" style={{borderWidth: '1px'}}>
 	    <CardBody className="text-center">
 	    	<span className="icon fs-13">
 					<i className={icon}></i>
