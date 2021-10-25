@@ -2,7 +2,7 @@ import projectImg from '../../assets/images/projects';
 
 const redleaf = {
 	projectKey: 'readleaf', 
-	img: projectImg['redleaf-1jpg'], 
+	img: projectImg['redleafpng'], 
 	title: 'RedLeaf', 
 	subtitle: 'Personal Projects Manager',
 	videoLink: null,

@@ -2,7 +2,7 @@ import projectImg from '../../assets/images/projects';
 
 const pear = {
 	projectKey: 'pear', 
-	img: projectImg['pear-1png'], 
+	img: projectImg['pearpng'], 
 	title: 'Pear', 
 	subtitle: 'Stock Managment System',
 	videoLink: null,

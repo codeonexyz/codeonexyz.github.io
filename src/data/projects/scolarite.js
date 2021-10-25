@@ -2,7 +2,7 @@ import projectImg from '../../assets/images/projects';
 
 const scolarite = {
 	projectKey: 'scolarite', 
-	img: projectImg['scolarite-2png'], 
+	img: projectImg['scolaritepng'], 
 	title: 'Scolarite', 
 	subtitle: 'Simple Student Manager',
 	videoLink: null,
